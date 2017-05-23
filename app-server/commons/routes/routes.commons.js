@@ -6,42 +6,52 @@ var userDao = require('../daos/dao.users');
 var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.render('Home', {
+	res.render('home', {
 		title : 'Home',
-		isActive : true
+		isActive : true,
+		footer : 'layouts/footer',
+		header : 'layouts/header',
+		menu : 'layouts/menu'
 	});
 });
 
-router.get('/support', function(req, res, next) {
-	res.render('Support', {
-		title : 'Support',
+router.get('/service', function(req, res, next) {
+	res.render('service', {
+		title : 'Service',
 		isActive : true
 	});
 });
 
 router.get('/about', function(req, res, next) {
-	res.render('About', {
+	res.render('about', {
 		title : 'About',
 		isActive : true
 	});
 });
 
-router.get('/blog', function(req, res, next) {
-	res.render('Blog', {
-		title : 'Blog',
+router.get('/staff', function(req, res, next) {
+	res.render('staff', {
+		title : 'Staff',
 		isActive : true
 	});
 });
 
 router.get('/contact', function(req, res, next) {
-	res.render('Contact', {
+	res.render('contact', {
 		title : 'Contact',
 		isActive : true
 	});
 });
 
+router.get('/details', function(req, res, next) {
+	res.render('details', {
+		title : 'Details',
+		isActive : true
+	});
+});
+
 router.get('/loginPage', function(req, res, next) {
-	res.render('Login', {
+	res.render('login', {
 		title : 'Login',
 		isActive : true
 	});
@@ -51,9 +61,10 @@ router.post('/login', function(req, res, next) {
 	var username = req.body.username;
 	var password = req.body.password;
 	var result = userDao.login(username, password);
-	if(result){
+	console.log(username + " " + password);
+	if (result) {
 		console.log("User is authenticated: " + result);
-	}else{
+	} else {
 		console.log("User authentication failed: " + result);
 	}
 	res.send('respond with a resource');

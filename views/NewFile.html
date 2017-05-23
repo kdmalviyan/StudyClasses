@@ -1,210 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
-<title><%= title %></title>
-<link rel='stylesheet' href='/stylesheets/style.css' />
+<title>The Erudite Website Template | Contact :: w3layouts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css"
-	href="/stylesheets/coin-slider.css" />
-<link
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-	rel="stylesheet" />
-<script type="text/javascript" src="/js/cufon-yui.js"></script>
-<script type="text/javascript" src="/js/cufon-georgia.js"></script>
-<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="/js/script.js"></script>
-<script type="text/javascript" src="/js/coin-slider.min.js"></script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Cagliostro'
+	rel='stylesheet' type='text/css'>
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-	<div class="main">
-		<div class="header">
-			<div class="header_resize">
-				<div class="menu_nav">
-					<ul>
-						<li id="_home"><a href="/"><span>Home Page</span></a></li>
-						<li id="_support"><a href="support"><span>Support</span></a></li>
-						<li id="_about"><a href="about"><span>About Us</span></a></li>
-						<li id="_blog"><a href="blog"><span>Blog</span></a></li>
-						<li id="_contact"><a href="contact"><span>Contact
-									Us</span></a></li>
-						<li id="_login"><a href="loginPage"><span>Login</span></a></li>
-					</ul>
-				</div>
-				<div class="logo">
-					<h1>
-						<a href="/">Victory<span>Pro</span></a>
-					</h1>
-				</div>
-				<div class="clr"></div>
-				<div class="slider">
-					<div id="coin-slider">
-						<a href="#"><img src="/images/slide1.jpg" width="960"
-							height="360" alt="" /><span> Tusce nec iaculis risus
-								hasellus nec sem sed tellus malesuada porttitor. Mauris
-								scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper
-								tortor. Phasellus posuere facilisis cursus. Nunc est lorem,
-								dictum at scelerisque sit amet, faucibus et est. Proin mattis
-								ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img
-							src="/images/slide2.jpg" width="960" height="360" alt="" /><span>
-								Tusce nec iaculis risus hasellus nec sem sed tellus malesuada
-								porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit
-								amet ullamcorper tortor. Phasellus posuere facilisis cursus.
-								Nunc est lorem, dictum at scelerisque sit amet, faucibus et est.
-								Proin mattis ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img
-							src="/images/slide3.jpg" width="960" height="360" alt="" /><span>
-								Tusce nec iaculis risus hasellus nec sem sed tellus malesuada
-								porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit
-								amet ullamcorper tortor. Phasellus posuere facilisis cursus.
-								Nunc est lorem, dictum at scelerisque sit amet, faucibus et est.
-								Proin mattis ipsum quis arcu aliquam molestie.</span></a>
-					</div>
-					<div class="clr"></div>
-				</div>
-				<div class="clr"></div>
+	<div class="wrap">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="index.html"><h1>erudite</h1></a>
 			</div>
+			<div class="header_right"><% include layouts/menu.ejs %></div>
+			<div class="clear"></div>
 		</div>
-		<div class="content">
-			<div class="content_resize">
-				<div class="mainbar">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-offset-5 col-md-3">
-								<div class="form-login">
-									<h4>Welcome back.</h4>
-									<input type="text" id="userName"
-										class="form-control input-sm chat-input"
-										placeholder="username" /> <br /> <input type="text"
-										id="userPassword" class="form-control input-sm chat-input"
-										placeholder="password" /> <br />
-									<div class="wrapper">
-										<span class="group-btn"> <a href="#"
-											class="btn btn-primary btn-md">login <i
-												class="fa fa-sign-in"></i></a>
-										</span>
+	</div>
+	<div class="main_bg">
+		<div class="wrap">
+			<div class="wrapper">
+				<div class="main">
+					<div class="section group">
+						<div class="col span_2_of_4">
+							<div class="contact-form">
+								<h2 class="style">Contact Us</h2>
+								<form method="post" action="contact-post.html">
+									<div>
+										<span><label>NAME</label></span> <span><input
+											name="userName" type="text" class="textbox"></span>
 									</div>
-								</div>
-
+									<div>
+										<span><label>E-MAIL</label></span> <span><input
+											name="userEmail" type="text" class="textbox"></span>
+									</div>
+									<div>
+										<span><label>MOBILE</label></span> <span><input
+											name="userPhone" type="text" class="textbox"></span>
+									</div>
+									<div>
+										<span><label>SUBJECT</label></span> <span><textarea
+												name="userMsg"> </textarea></span>
+									</div>
+									<div>
+										<a href="" class="btn btn_s">send me</a>
+									</div>
+								</form>
 							</div>
 						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
-				<div class="sidebar">
-					<div class="searchform">
-						<form id="formsearch" name="formsearch" method="post" action="#">
-							<span> <input name="editbox_search" class="editbox_search"
-								id="editbox_search" maxlength="80" value="Search our ste:"
-								type="text" />
-							</span> <input name="button_search" src="/images/search.gif"
-								class="button_search" type="image" />
-						</form>
-					</div>
-					<div class="clr"></div>
-					<div class="gadget">
-						<h2 class="star">
-							<span>Sidebar</span> Menu
-						</h2>
-						<div class="clr"></div>
-						<ul class="sb_menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">TemplateInfo</a></li>
-							<li><a href="#">Style Demo</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Archives</a></li>
-							<li><a href="#">Web Templates</a></li>
-						</ul>
-					</div>
-					<div class="gadget">
-						<h2 class="star">
-							<span>Sponsors</span>
-						</h2>
-						<div class="clr"></div>
-						<ul class="ex_menu">
-							<li><a href="#">Lorem ipsum dolor</a><br /> Donec libero.
-								Suspendisse bibendum</li>
-							<li><a href="#">Dui pede condimentum</a><br /> Phasellus
-								suscipit, leo a pharetra</li>
-							<li><a href="#">Condimentum lorem</a><br /> Tellus eleifend
-								magna eget</li>
-							<li><a href="#">Fringilla velit magna</a><br /> Curabitur
-								vel urna in tristique</li>
-							<li><a href="#">Suspendisse bibendum</a><br /> Cras id urna
-								orbi tincidunt orci ac</li>
-							<li><a href="#">Donec mattis</a><br /> purus nec placerat
-								bibendum</li>
-						</ul>
-					</div>
-				</div>
-				<div class="clr"></div>
-			</div>
-		</div>
-		<div class="fbg">
-			<div class="fbg_resize">
-				<div class="col c1">
-					<h2>
-						<span>Image</span> Gallery
-					</h2>
-					<a href="#"><img src="/images/gal1.jpg" width="75" height="75"
-						alt="" class="gal" /></a> <a href="#"><img src="/images/gal2.jpg"
-						width="75" height="75" alt="" class="gal" /></a> <a href="#"><img
-						src="/images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a>
-					<a href="#"><img src="/images/gal4.jpg" width="75" height="75"
-						alt="" class="gal" /></a> <a href="#"><img src="/images/gal5.jpg"
-						width="75" height="75" alt="" class="gal" /></a> <a href="#"><img
-						src="/images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a>
-				</div>
-				<div class="col c2">
-					<h2>
-						<span>Services</span> Overview
-					</h2>
-					<p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet
-						tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam
-						venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
-					<ul class="fbg_ul">
-						<li><a href="#">Lorem ipsum dolor labore et dolore.</a></li>
-						<li><a href="#">Excepteur officia deserunt.</a></li>
-						<li><a href="#">Integer tellus ipsum tempor sed.</a></li>
-					</ul>
-				</div>
-				<div class="col c3">
-					<h2>
-						<span>Contact</span> Us
-					</h2>
-					<p>Nullam quam lorem, tristique non vestibulum nec, consectetur
-						in risus. Aliquam a quam vel leo gravida gravida eu porttitor dui.</p>
-					<p class="contact_info">
-						<span>Address:</span> 1458 TemplateAccess, USA<br /> <span>Telephone:</span>
-						+123-1234-5678<br /> <span>FAX:</span> +458-4578<br /> <span>Others:</span>
-						+301 - 0125 - 01258<br /> <span>E-mail:</span> <a href="#">mail@yoursitename.com</a>
-					</p>
-				</div>
-				<div class="clr"></div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="footer_resize">
-				<p class="lf">
-					Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved
-				</p>
-				<p class="rf">
-					Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a>
-				</p>
-				<div style="clear: both;"></div>
 			</div>
 		</div>
 	</div>
+	<div class="wrap">
+		<div class="wrapper">
+			<div class="footer">
+				<div class="social-icons">
+					<ul>
+						<li class="icon_1"><a href="#" target="_blank"> </a></li>
+						<li class="icon_2"><a href="#" target="_blank"> </a></li>
+						<li class="icon_3"><a href="#" target="_blank"> </a></li>
+						<li class="icon_4"><a href="#" target="_blank"> </a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="index.html"><h2>erudite</h2></a>
+				<div class="copy">
+					<p class="w3-link">
+						© All Rights Reserved | Design by&nbsp; <a
+							href="http://w3layouts.com/"> W3Layouts</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
 </body>
 </html>
+
 <script>
 	$(document).ready(function() {
 		var isActive = <%= isActive %>;
 		if (isActive) {
-			$("#_login").addClass("active");
+			$("._contact").addClass("active");
 		} else {
-			$("#_support").removeClass("active");
-			$("#_about").removeClass("active");
-			$("#_blog").removeClass("active");
-			$("#_contact").removeClass("active");
-			$("#_home").removeClass("active");
+			$("._about").removeClass("active");
+			$("._staff").removeClass("active");
+			$("._service").removeClass("active");
+			$("._home").removeClass("active");
 		}
 	});
 </script>
